@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+    integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div>Hello World</div>
+  <div id="app">
+    <div>{{message}}</div>
+    <div>
+      <a :href="link">Click</a>
+    </div>
+    <div v-html="html"></div>
+    <div>{{count}}</div>
+    <button @click="onIncrement()">Increment</button>
+    <button @click="onDecrement()">Decrement</button>
+    <a href="" @click.prevent="onIncrement()">click</a>
+    <div v-if="login">LoggedIn</div>
+    <div v-if="!login">Not Login</div>
+    <button @click="logIn()">{{login ? 'LogOut': 'LogIn'}}</button>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+      </thead>
+      <tbody v-for="post in posts">
+        <td>{{post.name}}</td>
+        <td>{{post.age}}</td>
+      </tbody>
+    </table>
+    <div v-for="(value,key) in person">
+      {{key}} {{value}}
+    </div>
+    <div class="col-md-6">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" v-model="name">
+      <div>{{name}}</div>
+    </div>
+    <div class="col-md-5">
+      <label for="fname">FirstName</label>
+      <input type="text" class="form-control" v-model="firstName">
+      <div>{{firstName}}</div>
+      <label for="lname">LastName</label>
+      <input type="text" class="form-control" v-model="lastName">
+      <div>{{lastName}}</div>
+      <div>FullName:{{fName}}</div>
+      <!-- when we are using any method in template if any template changes or variable changes occur that method will call automatically this will result performance issue. To avoid this issue we are using computed property. -->
+      <label for="country">Country</label>
+      <input type="text" v-model="country" class="form-control" v-model="country">
+      <div>{{country}}</div>
+    </div>
+    <div class="col-md-4">
+      <label for="fName">fName</label>
+      <input type="text" class="form-control" @input="myFirstName($event)">
+      <div>{{myfName}}</div>
+    </div>
+    <div class="col-md-4">
+      <label for="fName">LName</label>
+      <input type="text" class="form-control" @input="myLastName($event)">
+      <div>{{mylName}}</div>
+    </div>
+    <div>myFullName:{{myFullName}}</div>
+    <!-- Watcher property is also same as computed property, But the difference is watcher will not execute for the first time. -->
+    <div>{{computedLoggedIn}}</div>
+    <div>{{watcherMsg}}</div>
+    <div>
+      <button @click=" onLogin()">login</button>
+      <button @click="onLogout()">LogOut</button>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js"
+    integrity="sha512-DJ2+sosWB5FnZAIeCWAHu2gxQ7Gi438oOZLcBQSOrW8gD0s7LIXDv/5RW76B3FcljF40BXnfqNIo6Dhp7dFHJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
