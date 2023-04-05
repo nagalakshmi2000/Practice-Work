@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: #3D4347;
+}
+
+.header {
+  background-color: #40608E;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+header {
+  font-size: 1.2em;
+}
+body {
+  background: none;
+}
+.main {
+  width: auto;
+}
+.clientDetails {
+  margin-top: 0.5em;
+}
+.row,
+.row1 {
+  display: flex;
+  flex-direction: column;
+}
+.Btn2 {
+  margin-left: 8%;
+}
+.col-1 {
+  margin-left: 1em;
+}
+#departmentId {
+  width: 92%;
+}
+.col-1,
+.col-2,
+.city,
+.addressField,
+.col-3,
+.bill,
+.chooseFile,
+.row,
+.row1 {
+  width: 97.5%;
+}
+input {
+  width: 92%;
+  padding: 8px;
+}
+.col-2,
+.col-3,
+.bill,
+.column,
+.chooseFile {
+  margin: 1em 0em 1em 1em;
+}
+.addressField input {
+  margin-left: 1rem;
+}
+.content {
+  margin-left: 1.2em;
+}
+.chooseFile input {
+  margin-left: 0.1em;
+}
+select {
+  padding: 8px;
+}
+.state select {
+  margin-left: 1em;
+  padding: 8px;
+}
+.icon {
+  width: 94%;
+}
+.mailphone {
+  width: 100%;
+  display: flex;
+}
+.radio-btn {
+  width: 5%;
+}
+#couselect {
+  width: 92%;
+}
+.place {
+  display: block;
+}
+.up-icon img {
+  width: 100%;
+}
+.logo {
+  border: 2px dotted #bab9b9;
+  padding: 1.5em 0px;
+}
+.dotted {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+.up-icon {
+  width: 2em;
+  background-color: #d7dce2;
+  border-radius: 48%;
+  padding: 7.5px 9px;
+  float: right;
+  position: relative;
+  right: 3em;
+  bottom: 3em;
+}
+#dateId {
+  position: absolute;
+  width: 96%;
+  z-index: 1;
+  margin-top: 1%;
+  opacity: 0;
+}
+
+.calender {
+  margin-left: 5px;
+}
+
+.icon {
+  margin-left: 5px;
+  position: relative;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  background-color: white;
+  border: none;
+}
+
+input[type="file"] {
+  color: white;
+}
+
+.content {
+  margin-bottom: 1.2em;
+}
+
+button {
+  padding: 1em 2em;
+  background-color: #4C96E0;
+  color: #DAEBFA;
+  margin: 4em 0em;
+  border: none;
+}
+
+textarea {
+  width: 94%;
+}
+
+.Btn {
+  text-align: center;
+}
+
+.d-none {
+  display: none;
+}
+
+table {
+display: none;
+}
+
+@media(min-width:420px) {
+  .up-icon {
+    top: 1em
+  }
+}
+
+@media(min-width:760px) {
+  .up-icon {
+    top: 1em;
+    right: 5em;
+  }
+
+  #billing {
+    width: 97%;
+  }
+}
+@media(min-width:1024px) {
+  .main {
+    width: 700px;
+    margin: auto;
+  }
+
+  body {
+    font-family: 'Roboto Slab', serif;
+    background-color: #3D4347;
+  }
+
+  form {
+    background: white;
+  }
+
+  .row,
+  .row1 {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .col-1 {
+    width: 30%;
+    margin-top: 1em;
+  }
+
+  .col-2 {
+    width: 60%;
+  }
+
+  .col-2 input {
+    width: 92%;
+  }
+
+  .mailPhone {
+    display: flex;
+    width: 20%;
+  }
+
+  .col-3 {
+    width: 43.5%;
+  }
+
+  .addressField {
+    margin-top: 1em;
+  }
+
+  .place {
+    display: flex;
+    width: 100%;
+  }
+
+  .city {
+    width: 48%;
+  }
+
+  .state {
+    width: 45%;
+    ;
+  }
+  .up-icon {
+    top: 1em;
+    right: 3.5em;
+  }
+  .icon {
+    width: 45%;
+  }
+
+  #dateId {
+    margin-left: 1.1em;
+    width: 100%;
+  }
+
+  .icon i {
+    position: absolute;
+    margin-top: 8px;
+  }
+  th,td{
+    border: 1px solid black;
+    width:18.15%;
+    padding:6px;
+  }
+  table {
+    display: block;
+    margin: auto;
+    background-color: white;
+    margin-top: 2%;
+    width:80%;
+    border-collapse: collapse;
+  }
+  tr:nth-child(even){
+    background-color: #a6a7d232 ;
+  }
+  tbody tr{
+    transition: background 0.3s;
+}
+td,th{
+ padding: 0.5rem 0.8rem;
+}
+tr:nth-child(even){
+background-color: #a6a7d232;
+}
+thead tr {
+  background-color: #487fc3;
+  color: white;
+  text-align: center;
+}
+}
+@media(min-width:1140px){
+  th,td,tr{
+    width:18.65%;
+    padding: 7px;
+ }
+  table{
+   max-width:80%;
+  }
+}

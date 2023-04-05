@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="client.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <h1>Client Details</h1>
+            <p>Enter the details of all incoming clients. </p>
+        </header>
+        <div class="client-form">
+            <form name="clientForm">
+                <div class="row ">
+                    <div class="col-1 clientDetails">
+                        <label for="clientname">Client Name <span>*</span> </label>
+                    </div>
+                    <div class="col-2 ">
+                        <input type="text" id="clientId" name="clientname" required>
+                        <p id="letter" class="showError"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="Company">Company<span>*</span></label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="companyId" name="company" minlength="5" maxlength="50" required>
+                        <p id="company-data"  class="showError"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="dept">Department<span>*</span></label>
+                    </div>
+                    <div class="col-2">
+                        <select id="departmentId" name="department" required>
+                            <option value="">-Select-</option>
+                            <option value="HR">HR
+                            </option>
+                            <option value="TR">TR
+                            </option>
+                            <option value="MD">MD
+                            </option>
+                        </select>
+                        <p id="departmentNameId"  class="showError"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="contact">Preferred contact method<span>*</span></label>
+                    </div>
+                    <div class="col-2 mailPhone">
+                        <input type="radio" class="radio-btn" name="mail" id="radio-mail" required>
+                        <label for="" class="mailName">Email</label>
+                        <input type="radio" class="radio-btn phone-btn" name="mail" id="radio-phone" required>
+                        <label for="" class="phoneName">Phone</label>
+                    </div>
+                </div>
+                <div class="row d-none">
+                    <div class="col-1">
+                        <label for="Email" id="email-id1">Email<span>*</span></label>
+                    </div>
+                    <div class="col-2">
+                        <input type="email" id="email-id"  >
+                        <p id="emailIdName"  class="showError"></p>
+                    </div>
+                </div>
+
+                <div class="row d-none">
+                    <div class="col-1">
+                        <label for="phone" id="phone-id1">Phone<span>*</span></label>
+                    </div>
+                    <div class="col-2">
+                        <input type="phone" id="phone-id"  >
+                        <p id="phoneid-data"  class="showError"></p>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="col-3">
+                        <label for="">Company address <span>*</span></label>
+                    </div>
+                    <div class="addressField">
+                        <input type="text" id="address" name="companyaddress" required>
+                        <p id=street-address></p>
+                        <div class="content">Street Address</div>
+                        <div class="address">
+                            <input type="text" id="addresslineName" required>
+                            <p id=addressline  class="showError"></p>
+
+                        </div>
+                        <div class="content">Address Line2</div>
+                        <div class="place">
+                            <div class="city">
+                                <input type="text" id="cityAddress" required>
+                                <p id=city-address  class="showError"></p>
+                                <div class="content" >City</div>
+                            </div>
+                            <div class="state">
+                                <input type="text" id="state-address" required>
+                                <p id=stateAddressId></p>
+                                <div class="content">State/Region/Province</div>
+                            </div>
+                        </div>
+                        <div class="place">
+                            <div class="city">
+                                <input type="text" id="postalcode" required>
+                                <p id="Zipcode"  class="showError"></p>
+                                <div class="content">Postal/Zip Code</div>
+                            </div>
+                            <div class="state">
+                                <select name="" id="couselect" class="sel2">
+                                    <option value="">-Select-</option>
+                                    <option value="India">India</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Australia">Australia</option>
+                                </select>
+                                <p id="country"  class="showError"></p>
+                                <div class="content">Country</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="website">Company website <span>*</span></label>
+                    </div>
+                    <div class="col-2 website">
+                        <input type="url" id="websites" required>
+                        <p id="company-website"  class="showError"></p>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="col-3">
+                        <label for="logo">Company logo</label>
+                    </div>
+                    <div class="chooseFile">
+                        <input type="file" placeholder="Choose File" class="logo">
+                        <div class="up-icon">
+                            <i class="fa-solid fa-arrow-up-from-bracket"></i>                           
+                        </div>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="col-3">
+                        <label for="">Billing Cycle <span>*</span></label>
+                    </div>
+                    <div class="bill">
+                        <div class="icon">
+                            <input type="date" name="date" id="dateId">
+                            <input type="text" id="billing" required><i class="fa-solid fa-calendar-days calender"></i>
+                        </div>
+                        <div class="content day">yyyy-MM-DD</div>
+                        <p id="calender" class="showError"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="additionalInformation">Additional Information <span>*</span></label>
+                    </div>
+                    <div class="column">
+                        <textarea name="" id="additionalName" cols="38" rows="5" required maxlength="200"></textarea>
+                        <p id="addtionalNameId" class="showError"></p>
+                    </div>
+                </div>
+                <div class="Btn">
+                    <button type="submit" class="submit-btn">Submit </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Client Name</th>
+                <th>Company</th>
+                <th>Department</th>
+                <th>Preferred contcat</th>
+                <th>Company address</th>
+                <th>Billing Cycle</th>
+            </tr>
+        </thead>
+        <tbody id="tablebody">
+
+        </tbody>
+    </table>
+    <script src="media.js"></script>
+</body>
+
+</html>
