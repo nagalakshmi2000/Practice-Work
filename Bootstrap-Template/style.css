@@ -1,0 +1,560 @@
+*,
+::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.has-bg-img img {
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(78%);
+}
+
+.header h5:hover {
+  color: #ed4266
+}
+
+.heading span:hover {
+  color: #ed4266;
+}
+
+.navbar {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: #ffff;
+}
+
+.position {
+  position: relative;
+  bottom: 10%;
+}
+
+.btn-1 {
+  border-radius: 5%;
+  padding: 8px 40px;
+}
+
+#div3,
+#div3A,
+#div3D,
+#div3C,
+#div3E,
+#div3B {
+  border: 2px solid #e10d0d;
+}
+
+body:has(#div1:hover) #div2,
+body:has(#divA:hover) #divB,
+body:has(#divE:hover) #divF,
+body:has(#divC:hover) #divD,
+body:has(#divG:hover) #divH,
+body:has(#divI:hover) #divJ {
+  color: blue;
+}
+
+body:has(#div1:hover) #div3,
+body:has(#divA:hover) #div3A,
+body:has(#divC:hover) #div3B,
+body:has(#divD:hover) #div3B,
+body:has(#divE:hover) #div3C,
+body:has(#divG:hover) #div3D,
+body:has(#divI:hover) #div3E {
+  border: 2px solid blue;
+}
+
+button.learnBtn:hover {
+  background-color: whitesmoke;
+  color: #e10d0d;
+  border: 2px solid #e10d0d;
+}
+
+.card-wrapper .fa-solid,
+.card-wrapper .fa-regular {
+  font-size: 1.5em;
+  color: #ed4266;
+}
+
+.card-wrapper {
+  background-color: #1b3a61;
+}
+
+.card-wrapper:hover {
+  background-color: #ed4266;
+}
+
+.legal {
+  margin-top: 10em;
+  z-index: 1;
+}
+
+.signWidth {
+  width: 21%;
+}
+
+.child-1 {
+  top: 15em;
+  left: 8em
+}
+
+.child {
+  margin-top: -9em;
+  background-color: #F5F5F7;
+}
+
+.fit img {
+  object-fit: cover;
+}
+
+.contact {
+  margin-left: 3em;
+}
+
+.top {
+  position: relative;
+}
+
+.signature img {
+  filter: grayscale(5);
+  filter: invert(50%);
+}
+
+.bottom {
+  position: absolute;
+}
+
+.donate {
+  background-image: url("https://mobirise.com/extensions/politicsm4/assets/images/background21.jpg");
+  background-size: 100% 100%;
+  opacity: 1;
+  background-color: rgb(35, 35, 35);
+}
+
+.decreaseImg {
+  width: 130px;
+}
+
+.wrapper {
+  position: relative;
+  border-top: 3px solid white;
+  border-right: 3px solid white;
+  border-left: 3px solid white;
+  padding: 3em;
+  width: 40%;
+  color: white;
+}
+
+.team1,
+.team2,
+.team3 {
+  position: relative;
+}
+
+.contact {
+  padding: 3em 0.2em;
+}
+
+a {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+input:hover,
+textarea:hover {
+  background-color: #f3eded;
+}
+
+.team-child {
+  position: absolute;
+  left: 2.9em;
+  width: 200px;
+  height: 100px;
+  bottom: -3em;
+}
+
+div.bg-light:hover {
+  background-color: #767676;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+.card,
+.sendSection {
+  border-radius: 0rem;
+}
+
+.needParent {
+  background-image:
+    linear-gradient(45deg,
+      rgba(150, 20, 66, 0.6),
+      rgba(150, 20, 66, 0.6)), url('https://mobirise.com/extensions/politicsm4/assets/images/background21.jpg');
+}
+
+.donateSection {
+  background-image:
+    linear-gradient(45deg,
+      rgb(61 33 43 / 60%),
+      rgb(61 36 43 / 60%)), url('https://mobirise.com/extensions/politicsm4/assets/images/background21.jpg');
+  background-position: 28% 44%;
+}
+
+.needChild h1 {
+  color: #ffffff;
+  filter: brightness(100%);
+}
+
+.needChild {
+  position: relative;
+  width: 65%;
+  top: 3.5em;
+  margin: auto;
+  padding: 1.5em;
+  font-size: 2.2em;
+}
+
+.kju {
+  background-color: rgb(243, 10, 10);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+  color: rgb(49, 48, 48);
+  font-size: 30px;
+  width: 0px;
+}
+
+.politics p,
+.freedomSection p,
+.carousel-item p {
+  color: #767676;
+}
+
+.freedomSection p {
+  padding-left: 5em;
+}
+
+.responsive {
+  display: flex;
+}
+
+button.sendSection {
+  border-radius: 5%;
+}
+
+button.sendSection:hover {
+  background-color: white;
+  color: red;
+  border: 2px solid red;
+}
+
+.one {
+  display: flex;
+  justify-content: space-around;
+}
+
+p {
+  color: #ebeced;
+}
+
+.contactBorder {
+  border: 2px solid orange;
+  width: 2em;
+}
+
+.contactData p {
+  color: #c1bebe;
+}
+
+.singleRow a {
+  background-color: white;
+  color: #767676;
+}
+
+.singleRow a:hover {
+  background: #ed4266;
+  color: white;
+}
+
+.footerDiv:hover {
+  color: #ed4266;
+}
+
+.priceBtn {
+  color: white;
+  border: 2px solid #e10d0d;
+  background: #e10d0d;
+  padding: 0.5em 2em;
+  border-radius: 5px;
+  font-weight: 700;
+  margin: 3em 0em;
+}
+
+.priceBtn:hover {
+  background: none;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.hide {
+  position: absolute;
+  bottom: 0%;
+  left: 100%;
+  right: 0;
+  background-color: #1c1d1e;
+  overflow: hidden;
+  width: 0%;
+  height: 100%;
+  transition: .5s ease;
+}
+.team1:hover .hide {
+  left: 0;
+  width: 100%;
+  opacity: 0.5;
+}
+.filter{
+  filter: brightness(60%);
+  animation: zoom-in 50s ease-in-out infinite;
+  transition: transform 8000ms ease-in 0s, opacity 800ms ease 0s;
+  opacity: 1;
+  transform: scale(1, 1);
+  z-index: 2;
+}
+
+@keyframes zoom-in {
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  0% {
+    transform: scale(1, 1);
+  }
+}
+.card-header{
+  padding: 0px;
+  margin: 0px;
+  width:100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-header img{
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+.card:hover img{
+  transform:scale(1.1) ;
+}
+.img-bg{
+  width: 100%;
+  padding: 0px;
+  height: 564px;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+.col img{
+  width:235px;
+  height: auto;
+}
+.img_width img{
+  width:100%;
+}
+.img_width{
+  width: 12.5%;
+}
+.overlayText {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+}
+@media(min-width:0px) and (max-width:575px) {
+  .img_width{
+    width: 25%;
+  }
+  .politics,
+  .donateSection,
+  .freedomSection {
+    text-align: center;
+  }
+
+  .has-bg-img img {
+    height: 100vh;
+    object-position: 100%;
+  }
+
+  .has-bg-img img .responsive,
+  .cardSection {
+    flex-direction: column;
+  }
+
+  .card-2 {
+    margin-top: 2em;
+  }
+
+  .team2,
+  .team1 {
+    margin-bottom: 5em;
+  }
+
+  .team-child {
+    bottom: -3em
+  }
+
+  .fromSection {
+    flex-direction: column;
+  }
+
+  .emailInput,
+  .topicInput {
+    margin-top: 1em;
+  }
+
+  .sendSection {
+    margin-bottom: 2em;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    bottom: 30em;
+  }
+
+  .getSection {
+    padding-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .needChild {
+    top: 2.3em;
+    width: 90%;
+    font-size: 1.59em;
+    text-align: center;
+  }
+
+  .needParent {
+    height: 65vh;
+  }
+
+  .contactCenter,
+  .linksCenter {
+    text-align: center;
+  }
+
+  .contactBorder {
+    width: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media(min-width:768px) and (max-width:1023px) {
+  .responsive {
+    flex-direction: column;
+  }
+
+  .wrapper {
+
+    padding: 3em;
+    width: 45%;
+    color: white;
+  }
+
+  .child-1 {
+    left: 3em;
+    top: 9em;
+  }
+
+  .one {
+    display: flex;
+  }
+
+  .singleRow {
+    display: flex;
+  }
+
+  .freedom {
+    margin-left: 0px;
+  }
+
+  .signWidth {
+    width: 26%;
+  }
+
+  .team2,
+  .team1 {
+    margin-bottom: 5em;
+  }
+
+  .team-child {
+    bottom: -3em
+  }
+
+  .team3 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .needParent {
+    height: 78vh;
+  }
+
+  .needChild {
+    top: 1.2em;
+    width: 90%;
+    font-size: 3.5em;
+    padding: 1.5em 1.5em;
+  }
+
+  .fromSection {
+    flex-direction: column;
+  }
+
+  .emailInput,
+  .topicInput {
+    margin-top: 1em;
+  }
+
+  .contact {
+    padding: 3em 2em;
+  }
+}
+
+@media(min-width:1400px) and (max-width:2000px) {
+  .fixCenter {
+    margin-left: auto;
+  }
+
+  .contact {
+    padding-left: 2em;
+  }
+
+  .carousel-item img {
+    left: 38%;
+  }
+
+  .singleRow {
+    padding-left: 3em;
+    width: 22%;
+  }
+
+  .child-1 {
+    left: 24.8em;
+    top: 25em;
+  }
+
+  .needChild {
+    width: 45%;
+    top: 2.8em;
+    font-size: 2.9rem;
+  }
+}
